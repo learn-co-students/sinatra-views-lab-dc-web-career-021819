@@ -1,0 +1,19 @@
+<h1>Today</h1>
+
+<%
+time = Time.new
+week_day = time.wday
+month = time.month
+day = time.day
+year = time.year
+
+if week_day == 2
+  week_day = 'Tuesday'
+end
+
+if month == 3
+  month = 'March'
+end
+%>
+
+<p>The date is <%=week_day%>, <%=month%> <%=day%>, <%=year%></p>
